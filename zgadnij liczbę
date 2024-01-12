@@ -1,0 +1,16 @@
+from random import randint
+
+los =randint (1,100)
+odp =0
+attempts =0
+
+print ("Zgadnij liczbę pomiędzy 1 a 100")
+
+while odp != los:
+    attempts += 1 
+    odp=int(input("Zgadnij liczbę: "))
+    if odp > los:
+      print("Niestety liczba jest wyższa od prawidłowej")
+    if odp < los:
+      print("Niestety liczba jest niższa od prawidłowej")
+print("Gratulacje! Zgadłeś liczbę za", attempts, "razem")
